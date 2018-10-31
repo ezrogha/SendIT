@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Login and Registration</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/login.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.message a').click(function () {
+        $('form').animate(
+          {
+            height: 'toggle',
+            opacity: 'toggle'
+          }, 'slow')
+      })
+    })
+  </script>
+</head>
+
+<body>
+  <div class="login-page">
+    <div class="form">
+      <img src="logo.png" />
+      <form class="register-form">
+        <input type="text" placeholder="Firstname" />
+        <input type="text" placeholder="Lastname" />
+        <input type="text" placeholder="Email" />
+        <input type="text" placeholder="Phone" />
+        <input type="text" placeholder="password" />
+        <input type="text" placeholder="confirm Password" />
+        <button>Create</button>
+        <p class="message">Already Registered?
+          <a href="#">Login</a>
+        </p>
+      </form>
+      <form>
+        <input type="text" placeholder="Username" />
+        <input type="text" placeholder="Password" />
+        <button>Login</button>
+        <p class="message">Not Registered?
+          <a href="#">Register</a>
+        </p>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
