@@ -5,6 +5,11 @@ body {
   background-position: center;
 }
 
+.logo {
+  height: 48px;
+  margin: 20px auto;
+}
+
 .login-page {
   width: 360px;
   padding: 2% 0 0;

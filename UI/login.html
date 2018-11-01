@@ -4,27 +4,17 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Login and Registration</title>
+  <title>SendIT: Login and Registration</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" media="screen" href="css/login.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $('.message a').click(function () {
-        $('form').animate(
-          {
-            height: 'toggle',
-            opacity: 'toggle'
-          }, 'slow')
-      })
-    })
-  </script>
+  <script src="js/login.js"></script>
 </head>
 
 <body>
   <div class="login-page">
     <div class="form">
-      <a href="#"><img src="images/logo.png" width="130" /></a>
+      <a href="#"><img src="images/nav_logo.png" class="logo" /></a>
       <form class="register-form">
         <input type="text" placeholder="Firstname" />
         <input type="text" placeholder="Lastname" />
