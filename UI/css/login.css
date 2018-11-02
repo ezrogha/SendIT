@@ -37,7 +37,9 @@ body {
   font-size: 14px
 }
 
-.form button {
+.btn {
+  text-decoration: none;
+  display: block;
   font-family: sans-serif;
   text-transform: uppercase;
   background: #4caf50;
@@ -45,10 +47,14 @@ body {
   border: 0;
   padding: 15px;
   color: #fff;
+  margin: 0 0 15px;
+  box-sizing: border-box;
+  font-size: 14px
 }
 
-.form button:hover, .form button:active {
+.btn:hover {
   background: #43a047;
+  /* cursor: default */
 }
 
 .form .message {
