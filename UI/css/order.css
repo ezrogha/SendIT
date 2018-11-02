@@ -113,3 +113,7 @@ h1 span {
 .order-btn:hover {
   background-color: #28862C
 }
+
+.order-btn:active {
+  outline: none;
+}
