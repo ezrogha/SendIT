@@ -41,7 +41,7 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
   font-family: sans-serif;
 }
 
@@ -75,6 +75,7 @@ h1 span {
 }
 
 .form-box select {
+  outline: none;
   height: 50px;
   padding: 10px;
   width: 200px;
@@ -87,6 +88,7 @@ h1 span {
 }
 
 .form-box input {
+  outline: none;
   height: 50px;
   padding: 10px;
   width: 50px;
@@ -99,6 +101,7 @@ h1 span {
 }
 
 .order-btn {
+  outline: none;
   height: 50px;
   padding: 10px;
   width: 100px;
@@ -112,8 +115,4 @@ h1 span {
 
 .order-btn:hover {
   background-color: #28862C
-}
-
-.order-btn:active {
-  outline: none;
 }

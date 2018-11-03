@@ -26,6 +26,7 @@ body {
 }
 
 .form input {
+  outline: none;
   font-family: sans-serif;
   outline: 1;
   background: #f2f2f2;
