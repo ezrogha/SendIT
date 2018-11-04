@@ -16,4 +16,9 @@ $(document).ready(function() {
     $("#dlg-wrapper").fadeIn();
     $("#dlg-box").fadeIn();
   });
+
+  $('.menu').click(function() {
+    // $('.adm-nav .dropdown').toggle();
+  })
+
 });

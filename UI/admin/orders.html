@@ -6,12 +6,41 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Admin: SendIT - Orders</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" type="image/png" href="../images/favicon.png"/>
+  <link rel="shortcut icon" type="image/png" href="../images/favicon.png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" media="screen" href="css/orders.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="css/dialog.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/orders.js"></script>
+  <style>
+    .to {
+      display: none;
+    }
+    @media screen and (max-width: 816px){
+      .order-list {
+        width: 100%;
+      }
+    }
+    @media screen and (max-width: 666px){
+      .list-col-icon {
+        display: none;
+      }
+    }
+    @media screen and (max-width: 668px){
+      .dest {
+        display: none;
+      }
+      .to {
+        display: inline-block
+      }
+    }
+
+    @media screen and (max-width: 828px){
+      .kg {
+        display: none
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -74,6 +103,18 @@
   <div class="container">
     <nav>
       <a href="index.html"><img src="../images/nav_logo.png" class="logo" /></a>
+      <button class="menu"><i class="fa fa-bars"></i></button>
+      <div class="dropdown">
+        <span>
+          <a href="index.html" class="active-link">Home</a>
+        </span>
+        <span>
+          <a href="users.html">Manage Users</a>
+        </span>
+        <span>
+          <a href="orders.html">Manage Delivery Orders</a>
+        </span>
+      </div>
       <ul>
         <li>
           <a href="./index.html">Home</a>
@@ -98,8 +139,8 @@
       <div class="header">
         <div class="hdr-item">OrderId</div>
         <div class="hdr-item">From</div>
-        <div class="hdr-item">Destination</div>
-        <div class="hdr-item">Weight (in kg)</div>
+        <div class="hdr-item"><span class="to">To</span><span class="dest">Destination</span></div>
+        <div class="hdr-item">Weight <span class="kg">(in kg)</span></div>
         <div class="hdr-item">Price (USD)</div>
         <div class="hdr-item">
           <div class="status">

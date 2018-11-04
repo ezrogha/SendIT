@@ -75,3 +75,9 @@
 .show_dialog {
   display: block;
 }
+
+@media screen and (max-width: 480px){
+  #dlg-box {
+    width: 100%
+  }
+}

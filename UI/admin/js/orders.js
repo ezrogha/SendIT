@@ -73,4 +73,9 @@ $(document).on('click', '.icon-style, .a', function (event) {
         $('.item-not-delivered').show();
         $('.item-delivered').hide();
       })
+
+      //Nav Menu dropdown
+      $('.menu').click(function() {
+        // $('nav .dropdown').toggle();
+      })
     });
