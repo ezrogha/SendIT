@@ -184,12 +184,12 @@ nav ul li a:hover {
 .fa-edit {
   margin-right: 5px;
   color: green;
-  font-size: 20px
+  font-size: 16px
 }
 
 .fa-trash {
   color: rgba(253, 18, 18, 0.884);
-  font-size: 20px
+  font-size: 16px;
 }
 
 .icon-style {
