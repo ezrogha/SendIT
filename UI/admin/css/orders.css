@@ -181,20 +181,40 @@ nav ul li a:hover {
   display: block;
 }
 
-.fa {
-  font-size: 20px
-}
-
 .fa-edit {
   margin-right: 5px;
   color: green;
+  font-size: 20px
 }
 
 .fa-trash {
   color: rgba(253, 18, 18, 0.884);
+  font-size: 20px
 }
 
 .icon-style {
   text-decoration: none;
   /* color: #444; */
+}
+
+.fa-user-check {
+  font-size: 14px;
+  color: green;
+}
+
+.fa-user-times {
+  font-size: 14px;
+  color: rgba(253, 18, 18, 0.884);
+}
+
+.active-link {
+  color: #e78200;;
+}
+
+.list-item::selection {
+  background-color: transparent;
+}
+
+.header::selection {
+  background-color: transparent;
 }
