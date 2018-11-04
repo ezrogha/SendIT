@@ -58,13 +58,13 @@ body {
   /* cursor: default */
 }
 
-.form .message {
+.form .message, .form .message-admin  {
   margin: 15px 0 0;
   color: aliceblue;
   font-size: 14px
 }
 
-.form .message a {
+.form .message a, .form .message-admin a {
   text-decoration: none;
   color: #e78200
 }
