@@ -99,6 +99,7 @@ h1 span {
 }
 
 .order-btn {
+  outline: none;
   height: 50px;
   padding: 10px;
   width: 100px;
@@ -114,6 +115,6 @@ h1 span {
   background-color: #28862C
 }
 
-.order-btn:active {
-  outline: none;
+.active-link {
+  color: #e78200;;
 }
