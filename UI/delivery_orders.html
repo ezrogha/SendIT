@@ -4,31 +4,18 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Admin: SendIT - Orders</title>
+  <title>SendIT</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" type="image/png" href="../images/favicon.png"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" media="screen" href="css/orders.css" />
-  <link rel="stylesheet" type="text/css" media="screen" href="css/dialog.css" />
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" media="screen" href="css/delivery_orders.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./admin/css/dialog.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="js/orders.js"></script>
+  <script src="js/delivery_orders.js"></script>
 </head>
 
 <body>
-  <div class="dlg-wrapper">
-    <div class="dlg-box">
-      <div class="dlg-header">
-        Confirm Deletion of Order
-      </div>
-      <div class="dlg-body">
-        Are you sure, you want to delete this order?
-      </div>
-      <div class="dlg-footer">
-        <button class="btn">No</button>
-        <a href="#" class="btn a">Yes</a>
-      </div>
-    </div>
-  </div>
   <div class="dlg-wrapper-edit">
     <div class="dlg-box-edit">
       <div class="dlg-header">
@@ -53,36 +40,77 @@
         </div>
         <div>
           <span>Weight (in Kg): </span>
-          <input value="1.2" size="5" />
+          <input value="1.2" size="5" disabled />
           <span>Price (in USD):</span>
-          <input value="32" size="5" />
+          <input value="32" size="5" disabled />
         </div>
         <div>
           <span>Status: </span>
           <select>
-            <option>Delivered</option>
             <option>Not Delivered</option>
           </select>
         </div>
       </div>
       <div class="dlg-footer">
-        <button class="btn">Discard</button>
+        <button class="btn">Cancel</button>
         <a href="#" class="btn a">Save</a>
+        <button class="btn">Cancel Order</button>
+      </div>
+    </div>
+  </div>
+  <div class="dlg-wrapper">
+    <div class="dlg-box">
+      <div class="dlg-header">
+        Order: 0182
+      </div>
+      <div class="dlg-body">
+        <div>
+          <span>From:</span>
+          <select disabled>
+            <option>Kampala, Uganda</option>
+          </select>
+          <span> To:</span>
+          <select disabled>
+            <option>Mbale, Uganda</option>
+            <option selected>Mbarara, Uganda</option>
+            <option>Gulu, Uganda</option>
+            <option>Nairobi, Kenya</option>
+            <option>Kisumu, Kenya</option>
+            <option>Dar es salaam, Tanzania</option>
+            <option>Dodoma, Tanzania</option>
+          </select>
+        </div>
+        <div>
+          <span>Weight (in Kg): </span>
+          <input value="1.2" size="5" disabled />
+          <span>Price (in USD):</span>
+          <input value="32" size="5" disabled />
+        </div>
+        <div>
+          <span>Status: </span>
+          <select disabled>
+            <option>Delivered</option>
+          </select>
+        </div>
+      </div>
+      <div class="dlg-footer">
+        <button class="btn">Cancel</button>
       </div>
     </div>
   </div>
   <div class="container">
     <nav>
-      <a href="index.html"><img src="../images/nav_logo.png" class="logo" /></a>
+<<<<<<< HEAD:UI/orders.html
+      <a href="./index.html"><img src="images/nav_logo.png" class="logo" /></a>
+=======
+      <a href="order.html"><img src="images/nav_logo.png" class="logo" /></a>
+>>>>>>> order-page:UI/delivery_orders.html
       <ul>
         <li>
-          <a href="./index.html">Home</a>
+          <a href="order.html">Home</a>
         </li>
         <li>
-          <a href="./users.html">Manage Users</a>
-        </li>
-        <li>
-          <a href="./orders.html" class="active-link">Manage Delivery Orders</a>
+          <a href="delivery_orders.html" class="active-link">Delivery Orders</a>
         </li>
       </ul>
     </nav>
@@ -122,14 +150,6 @@
         <div class="list-col">1.5</div>
         <div class="list-col">32</div>
         <div class="list-col not">Not Delivered</div>
-        <div class="list-col-icon">
-          <a href="#" class="icon-style edit">
-            <icon class="fa fa-edit"></icon>
-          </a>
-          <a href="#" class="icon-style trash">
-            <icon class="fa fa-trash"></icon>
-          </a>
-        </div>
       </div>
       <div class="list-item item-delivered">
         <div class="list-col">0941</div>
@@ -138,14 +158,6 @@
         <div class="list-col">1.2</div>
         <div class="list-col">3</div>
         <div class="list-col yeah">Delivered</div>
-        <div class="list-col-icon">
-          <a href="#" class="icon-style edit">
-            <icon class="fa fa-edit"></icon>
-          </a>
-          <a href="#" class="icon-style trash">
-            <icon class="fa fa-trash"></icon>
-          </a>
-        </div>
       </div>
       <div class="list-item item-delivered">
         <div class="list-col">0889</div>
@@ -154,14 +166,6 @@
         <div class="list-col">0.8</div>
         <div class="list-col">3</div>
         <div class="list-col yeah">Delivered</div>
-        <div class="list-col-icon">
-          <a href="#" class="icon-style edit">
-            <icon class="fa fa-edit"></icon>
-          </a>
-          <a href="#" class="icon-style trash">
-            <icon class="fa fa-trash"></icon>
-          </a>
-        </div>
       </div>
       <div class="list-item item-delivered">
         <div class="list-col">0293</div>
@@ -170,14 +174,6 @@
         <div class="list-col">0.4</div>
         <div class="list-col">34</div>
         <div class="list-col yeah">Delivered</div>
-        <div class="list-col-icon">
-          <a href="#" class="icon-style edit">
-            <icon class="fa fa-edit"></icon>
-          </a>
-          <a href="#" class="icon-style trash">
-            <icon class="fa fa-trash"></icon>
-          </a>
-        </div>
       </div>
     </div>
   </div>

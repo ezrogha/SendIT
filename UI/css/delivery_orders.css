@@ -106,12 +106,23 @@ nav ul li a:hover {
   box-shadow: 3px 3px 5px #ccc;
 }
 
+.list-item:hover {
+  box-shadow: 6px 6px 10px #ccc;
+  z-index: 100;
+  cursor: pointer
+}
+
 .list-col {
   display: inline-block;
   width: 15%;
   text-align: center;
   padding: 15px 0;
   box-sizing: border-box;
+}
+
+.list-col-icon {
+  display: inline-block;
+  /* outline: 1px solid #00f; */
 }
 
 .not {
@@ -168,3 +179,6 @@ nav ul li a:hover {
   display: block;
 }
 
+.active-link {
+  color: #e78200;;
+}
