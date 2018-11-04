@@ -43,18 +43,18 @@
   letter-spacing: 1px;
 }
 
-.dlg-body-edit {
+.dlg-body-edit, .dlg-body {
   height: 100px;
   letter-spacing: 1px;
   padding: 10px;
   font-size: 15px
 }
 
-.dlg-body-edit div {
+.dlg-body-edit div, .dlg-body div {
   margin-bottom: 10px;
 }
 
-.dlg-body-edit select, .dlg-body-edit input {
+.dlg-body-edit select, .dlg-body-edit input, .dlg-body select, .dlg-body input {
   height: 25px;
   padding: 3px;
   box-sizing: border-box;

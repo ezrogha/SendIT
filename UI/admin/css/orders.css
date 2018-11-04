@@ -110,6 +110,7 @@ nav ul li a:hover {
 .list-item:hover {
   box-shadow: 6px 6px 10px #ccc;
   z-index: 100;
+  /* cursor: pointer; */
 }
 
 .list-col {

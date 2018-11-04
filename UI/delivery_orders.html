@@ -6,14 +6,98 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>SendIT</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" media="screen" href="css/delivery_orders.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./admin/css/dialog.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="js/delivery_orders.js"></script>
 </head>
 
 <body>
+  <div class="dlg-wrapper-edit">
+    <div class="dlg-box-edit">
+      <div class="dlg-header">
+        Edit Order: 0182
+      </div>
+      <div class="dlg-body-edit">
+        <div>
+          <span>From:</span>
+          <select disabled>
+            <option>Kampala, Uganda</option>
+          </select>
+          <span> To:</span>
+          <select>
+            <option>Mbale, Uganda</option>
+            <option>Mbarara, Uganda</option>
+            <option>Gulu, Uganda</option>
+            <option>Nairobi, Kenya</option>
+            <option>Kisumu, Kenya</option>
+            <option>Dar es salaam, Tanzania</option>
+            <option>Dodoma, Tanzania</option>
+          </select>
+        </div>
+        <div>
+          <span>Weight (in Kg): </span>
+          <input value="1.2" size="5" disabled />
+          <span>Price (in USD):</span>
+          <input value="32" size="5" disabled />
+        </div>
+        <div>
+          <span>Status: </span>
+          <select>
+            <option>Not Delivered</option>
+          </select>
+        </div>
+      </div>
+      <div class="dlg-footer">
+        <button class="btn">Cancel</button>
+        <a href="#" class="btn a">Save</a>
+        <button class="btn">Cancel Order</button>
+      </div>
+    </div>
+  </div>
+  <div class="dlg-wrapper">
+    <div class="dlg-box">
+      <div class="dlg-header">
+        Order: 0182
+      </div>
+      <div class="dlg-body">
+        <div>
+          <span>From:</span>
+          <select disabled>
+            <option>Kampala, Uganda</option>
+          </select>
+          <span> To:</span>
+          <select disabled>
+            <option>Mbale, Uganda</option>
+            <option selected>Mbarara, Uganda</option>
+            <option>Gulu, Uganda</option>
+            <option>Nairobi, Kenya</option>
+            <option>Kisumu, Kenya</option>
+            <option>Dar es salaam, Tanzania</option>
+            <option>Dodoma, Tanzania</option>
+          </select>
+        </div>
+        <div>
+          <span>Weight (in Kg): </span>
+          <input value="1.2" size="5" disabled />
+          <span>Price (in USD):</span>
+          <input value="32" size="5" disabled />
+        </div>
+        <div>
+          <span>Status: </span>
+          <select disabled>
+            <option>Delivered</option>
+          </select>
+        </div>
+      </div>
+      <div class="dlg-footer">
+        <button class="btn">Cancel</button>
+      </div>
+    </div>
+  </div>
   <div class="container">
     <nav>
       <a href="order.html"><img src="images/nav_logo.png" class="logo" /></a>

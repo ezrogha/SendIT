@@ -1,4 +1,32 @@
 $(document).ready(function() {
+
+  $('.dlg-wrapper-edit, .dlg-wrapper').hide();
+  $('.dlg-box-edit, .dlg-box').hide();
+
+
+  // Check Again
+  $('.item-not-delivered').click(function() {
+    $('.dlg-wrapper-edit').fadeIn();
+    $('.dlg-box-edit').fadeIn();
+  })
+
+  $('.item-delivered').click(function() {
+    $('.dlg-wrapper').fadeIn();
+    $('.dlg-box').fadeIn();
+  })
+
+  $('.dlg-box .dlg-footer .a, .dlg-box .dlg-footer button').click(function () {
+    $('.dlg-wrapper').fadeOut();
+    $('.dlg-box').hide();
+  })
+
+  $('.dlg-box-edit .dlg-footer .a, .dlg-box-edit .dlg-footer button').click(function () {
+    $('.dlg-wrapper-edit').fadeOut();
+    $('.dlg-box-edit').hide();
+  })
+
+
+
   $('.status button').click(function(){
     $('.dropdown').toggleClass('show_dropdown')
   });
@@ -21,4 +49,5 @@ $(document).ready(function() {
     $('.item-not-delivered').show();
     $('.item-delivered').hide();
   })
+  
 });
