@@ -71,3 +71,11 @@ body {
 .form .register-form {
   display: none
 }
+
+h2 {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  /* color: #daaf78 */
+  color: #e78200
+}
