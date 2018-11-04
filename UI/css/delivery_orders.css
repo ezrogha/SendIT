@@ -7,6 +7,10 @@ body {
   background-color: #f9f9f9; 
 }
 
+.to {
+  display: none;
+}
+
 .container nav {
   height: 80px;
   width: 100%;
@@ -181,4 +185,50 @@ nav ul li a:hover {
 
 .active-link {
   color: #e78200;;
+}
+
+@media screen and (max-width: 668px){
+  .dest {
+    display: none;
+  }
+  .to {
+    display: inline-block
+  }
+}
+
+@media screen and (max-width: 828px){
+  .kg {
+    display: none
+  }
+}
+
+@media screen and (max-width: 544px){
+  .order-list {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 628px) {
+  .logo {
+    margin: 16px 0px 16px 10px;
+  }
+
+  nav ul {
+    margin: 30px 10px 16px 0px;
+  }
+  
+  nav ul li {
+    padding-left: 10px;
+  }
+
+  .status button {
+    padding: 0
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .dropdown {
+    left: -50px;
+  }
 }

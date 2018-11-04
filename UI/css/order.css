@@ -121,3 +121,70 @@ h1 span {
   color: #e78200;;
 }
 
+@media screen and (max-width: 892px) {
+  h1 {
+    font-size: 39px;
+  }
+
+  .form-box {
+    padding: 20px 20px;
+  }
+
+  .form-box select {
+    width: 180px;
+  }
+  
+  .order-btn {
+    width: 80px;
+  }
+  
+}
+
+@media screen and (max-width: 772px) {
+  .order-btn {
+    margin-top: 10px;
+    display: block;
+    width: 60%;
+    margin-left: 20%;
+  }
+}
+
+@media screen and (max-width: 688px) {
+  .weight {
+    display: inline-block;
+    margin-left: 20%;
+    margin-top: 10px;
+  }
+  .form-box input {
+    margin-top: 10px;
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 628px) {
+  .logo {
+    margin: 16px 10px
+  }
+
+  nav ul {
+    margin: 30px 10px 16px
+  }
+  
+  nav ul li {
+    padding-left: 10px
+  }
+}
+
+@media screen and (max-width: 538px) {
+  .to {
+    padding-right: 20px;
+  }
+  .to, .from {
+    display: inline-block;
+    margin-left: 20%;
+  }
+  .form-box select {
+    width: 55%;
+    margin-top: 10px;
+  }
+}

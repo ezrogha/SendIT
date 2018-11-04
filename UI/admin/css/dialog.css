@@ -94,3 +94,12 @@
 .marg .list-col {
   margin-right: 4px;
 }
+
+@media screen and (max-width: 480px) {
+  .dlg-box, .dlg-box-edit {
+    width: 100%;
+  }
+  .dlg-body-edit, .dlg-body {
+    padding: 3px
+  }
+}
