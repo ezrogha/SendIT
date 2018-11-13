@@ -66,4 +66,7 @@ $(document).ready(function() {
     $(".item-not-active").show();
     $(".item-active").hide();
   });
+  $('.menu').on('click', function() {
+    $('.dropdown-two').toggle()
+  })
 });
