@@ -183,7 +183,8 @@ h1 span {
   }
 }
 
-@media screen and (max-width: 628px) {
+/* @media screen and (max-width: 628px) { */
+@media screen and (max-width: 736px) {
   .logo {
     margin: 16px 10px
   }
@@ -264,5 +265,17 @@ h1 span {
 
   .adm-nav .dropdown span a:hover {
     background-color: #333;
+  }
+}
+
+@media screen and (max-width: 483px) {
+  nav .logo, nav ul {
+    /* outline: 1px solid #f00; */
+  }
+  .logo {
+    margin-bottom: 5px
+  }
+  nav ul {
+    margin-top: 5px;
   }
 }
