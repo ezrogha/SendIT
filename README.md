@@ -2,6 +2,8 @@
 
 SendIT is a courier service that helps users deliver *parcels* to different destinations. SendIT provides courier quotes based on weight categories.
 
+### GitHub Pages - https://ezrogha.github.io/SendIT/UI/
+
 ## Features
 - Users can create an account and log in.
 - Users can create a parcel delivery order.
