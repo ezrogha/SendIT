@@ -21,4 +21,7 @@ $(document).ready(function() {
     // $('.adm-nav .dropdown').toggle();
   })
 
+  $('.menu').on('click', function() {
+    $('.dropdown').toggle()
+  })
 });
