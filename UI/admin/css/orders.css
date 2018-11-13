@@ -30,7 +30,7 @@ body {
   color: #e78200;
 }
 
-nav .dropdown{
+nav .dropdown-two{
   display: none;
 }
 
@@ -151,7 +151,7 @@ nav ul li a:hover {
 }
 
 .yeah {
-  color: #0f0;
+  color: #28862c;
 }
 
 .status {
@@ -238,6 +238,10 @@ nav ul li a:hover {
   background-color: transparent;
 }
 
+.dropdown-two a, .dropdown a {
+  display: none;
+}
+
 @media screen and (max-width: 561px){
   .order-list {
     width: 100%
@@ -249,8 +253,9 @@ nav ul li a:hover {
     display: none;
   }
 }
-
-@media screen and (max-width: 830px){
+/* NEW */
+/* @media screen and (max-width: 830px){ */
+@media screen and (max-width: 940px){
   nav ul {
     margin: 30px 18px 16px
   }
@@ -264,12 +269,13 @@ nav ul li a:hover {
   }
 }
 
-@media screen and (max-width: 652px){
+/* @media screen and (max-width: 652px){ */
+@media screen and (max-width: 723px){
   nav ul {
     display: none
   }
 
-  nav .dropdown{
+  nav .dropdown-two{
     display: none;
   }
 
@@ -277,31 +283,37 @@ nav ul li a:hover {
     display: block
   }
 
-  nav .dropdown {
-    /* position: absolute; */
-    right: -300px;
+  nav .dropdown-two {
+    position: absolute;
+    z-index: 1000;
+    right: 70px;
     top: 50px;
     width: 200px;
     padding: 0;
   }
   
-  nav .dropdown span {
+  nav .dropdown-two span {
     display: block;
     text-align: right;
     padding: 0px
   }
   
-  nav .dropdown span a {
+  nav .dropdown-two span a {
     color: #fff;
     display: block;
     padding: 7px;
     width: 100%;
-    background-color: #555;
+    background-color: rgb(85, 85, 85);
     text-decoration: none;
     font-family: sans-serif;
   }
 
-  nav .dropdown span a:hover {
+  nav .dropdown-two span .active-link {
+    color: #e78200;
+    background-color: rgba(51, 51, 51);
+  }
+
+  nav .dropdown-two span a:hover {
     background-color: #333;
   }
 }
