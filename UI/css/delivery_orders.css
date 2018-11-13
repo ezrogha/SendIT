@@ -31,7 +31,7 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  padding-left: 32px;
+  padding-left: 22px;
 }
 
 nav ul li a {
@@ -134,7 +134,7 @@ nav ul li a:hover {
 }
 
 .yeah {
-  color: #0f0;
+  color: #28862c;
 }
 
 .status {
