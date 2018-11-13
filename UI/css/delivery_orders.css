@@ -209,7 +209,8 @@ nav ul li a:hover {
 
 }
 
-@media screen and (max-width: 628px) {
+/*@media screen and (max-width: 628px) {*/
+@media screen and (max-width: 736px) {
   .logo {
     margin: 16px 0px 16px 10px;
   }
@@ -230,5 +231,11 @@ nav ul li a:hover {
 @media screen and (max-width: 590px) {
   .dropdown {
     left: -50px;
+  }
+}
+
+@media screen and (max-width: 498px) {
+  nav ul li {
+    background-color: #444
   }
 }
