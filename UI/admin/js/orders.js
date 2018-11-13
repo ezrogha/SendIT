@@ -75,7 +75,7 @@ $(document).on('click', '.icon-style, .a', function (event) {
       })
 
       //Nav Menu dropdown
-      $('.menu').click(function() {
-        // $('nav .dropdown').toggle();
+      $('.menu').on('click', function() {
+        $('.dropdown-two').toggle()
       })
     });
