@@ -45,6 +45,10 @@ nav, .adm-nav {
   margin: 16px 48px
 }
 
+nav li .active-link {
+  color: #e78200;
+}
+
 nav ul, .adm-nav ul, .menu {
   float: right;
   margin: 0;
